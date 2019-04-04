@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>个人简历</title>
+  <script src="//at.alicdn.com/t/font_1125022_wj0bxhktlr.js"></script>
+  
+  <style>
+    /* reset */
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    ul {
+      margin-left: -1em;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    /* common */
+    body {
+      font: 14px/1.5 Arial;
+      color: #000;
+    }
+    
+    .icon {
+      width: 1em; 
+      height: 1em;
+      vertical-align: -0.15em;
+      fill: currentColor;
+      overflow: hidden;
+    }
+    
+    /* layout */
+    body {
+      display: grid;
+      grid: auto 400px / 1fr 300px 700px 1fr;
+    }
+    
+    header {
+      grid-row: 1;
+      grid-column: 1/5;
+      text-align: center;
+      color: #fff;
+      background-color: #2C3E50;
+    }
+    
+    main {
+      grid-row: 2;
+      grid-column: 3/span 1;
+      /* background-color: #1ABC9C; */
+    }
+    
+    aside {
+      grid-row: 2;
+      grid-column: 2/3;
+      /* background-color: #ECF0F1; */
+    }
+    
+    header > span {
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+    
+    section {
+      display: grid;
+      grid: auto auto / 50px 120px 1fr;
+      margin-top: 20px;
+      padding: 10px;
+      align-items: center;
+    }
+    
+    section > .icon {
+      grid-row: 1;
+      grid-column: 1;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 50%;
+      color: #fff;
+      background-color: #2980B9;
+    }
+    
+    section > h2 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+    
+    section > hr {
+      grid-row: 1;
+      grid-column: 3;
+      width: 100%;
+      height: 3px;
+      border: none;
+      background-color: #2980B9;
+    }
+    
+    section .detail {
+      grid-row: 2;
+      grid-column: 2/4;
+    }
+    
+    section .icon-list {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    section .icon-list .icon {
+      font-size: 18px;
+      margin-right: 10px;
+      color: #7F8C8D;
+    }
+    
+    section .timeline-panel {
+      display: grid;
+      grid: auto auto / 160px 1fr auto;
+      align-items: center;
+    }
+    
+    section .timeline-panel .date {
+      grid-row: 1;
+      grid-column: 1;
+    }
+    
+    section .timeline-panel h3 {
+      grid-row: 1;
+      grid-column: 2;
+    }
+    
+    section .timeline-panel .major {
+      grid-row: 1;
+      grid-column: 3;
+    }
+    
+    section .timeline-panel .intro {
+      grid-row: 2;
+      grid-column: 2/4;
+    }
+    
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h2>高中远</h2>
+    <span>应聘前端工程师</span>
+  </header>
+  
+  <main>
+    <section>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-education"></use>
+      </svg>
+      <h2>教育经历</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <div class="date">2013.09 ~ 2017.06</div>
+          <h3>浙江工业大学</h3>
+          <p class="major">本科&nbsp&nbsp功能材料</p>
+          <p class="intro">全国大学英语4、6级</p>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-education"></use>
+      </svg>
+      <h2>个人项目</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <div class="date">2017.06 ~ 2018.03</div>
+          <h3>东华工程科技股份有限公司上海分公司</h3>
+          <p class="major">工程师助理</p>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-education"></use>
+      </svg>
+      <h2>个人项目</h2>
+      <hr>
+      <div class="detail">
+        <div class="timeline-panel">
+          <div class="date"></div>
+          <h3>东华工程科技股份有限公司上海分公司</h3>
+          <p class="major"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <aside>
+    <section>
+      <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-info"></use>
+      </svg>
+      <h2>基本信息</h2>
+      <div class="detail">
+        <div class="icon-list">
+          <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-phone"></use>
+        </svg>
+          <span>18516368662</span>
+        </div>
+        <div class="icon-list">
+          <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-email"></use>
+        </svg>
+          <span>gaozhyuan@126.com</span>
+        </div>
+      </div>
+      <hr>
+    </section>
+    
+    <section>
+      <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-skill"></use>
+      </svg>
+      <h2>掌握技能</h2>
+      <div class="detail">
+        <ul>
+          <li>掌握 <strong>HTML5/CSS3</strong>，熟悉传统布局、Flex布局、Grid布局、移动端适配等</li>
+          <li>熟悉Vue技术栈如Vue-Router、Vuex、Vue-CLI及相关流行库的使用，对其重要概念有一定理解</li>
+          <li>熟悉前后端交互技术JSONP、AJAX，了解fetch</li>
+        </ul>
+      </div>
+      <hr>
+    </section>
+  </aside>
+</body>
+</html>
