@@ -5,7 +5,7 @@
   <title>个人简历</title>
   <meta name="viewport" content="width=device-width">
   <script src="//at.alicdn.com/t/font_1125022_je279o09hya.js"></script>
-  
+
   <style>
     /* reset */
     body {
@@ -13,22 +13,22 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     ul {
       margin-left: -1em;
     }
-    
+
     li {
       margin-bottom: 10px;
     }
-    
-    
+
+
     /* layout */
     body {
       display: grid;
       grid: auto auto / 1fr 300px 700px 1fr;
     }
-    
+
     header {
       grid-row: 1;
       grid-column: 1/5;
@@ -36,68 +36,89 @@
       color: #fff;
       background-color: #2C3E50;
     }
-    
+
     main {
       grid-row: 2;
       grid-column: 3/span 1;
       /* background-color: #1ABC9C; */
     }
-    
+
     aside {
       grid-row: 2;
       grid-column: 2/3;
       /* background-color: #ECF0F1; */
     }
-    
-    @media(max-width: 1000px) {
+
+    @media (max-width: 1000px) {
       body {
-        grid: auto auto / 1fr 200px 400px 1fr;
+        grid: auto auto / 1fr 200px 500px 1fr;
+      }
+
+      section .intro #img_preview {
+        width: 250px;
+        height: 110px;
       }
     }
-    
-    @media(max-width: 768px) {
+
+    @media (max-width: 768px) {
       body {
         grid: auto auto auto / 1fr;
         padding: 0 10px 30px 10px;
       }
-      
+
       header {
         grid-row: 1;
         grid-column: 1;
       }
-      
+
       aside {
         grid-row: 2;
         grid-column: 1;
       }
-      
+
       main {
         grid-row: 3;
         grid-column: 1;
       }
+
+      section .intro #img_preview {
+        width: 400px;
+        height: 180px;
+      }
     }
-    
-    
+
+
     /* common */
     body {
       font: 14px/1.5 Arial;
       color: #333;
       padding-bottom: 30px;
     }
-    
+
+    a {
+      text-decoration: none;
+      color: #7F8C8D;
+    }
+
+    .highlight {
+      font-weight: bold;
+      background-color: #ECF0F1;
+      color: #F39C12;
+    }
+
     .icon {
-      width: 1em; 
+      width: 1em;
       height: 1em;
       vertical-align: -0.15em;
       fill: currentColor;
       overflow: hidden;
     }
-    
+
     header > span {
       display: inline-block;
       padding-bottom: 10px;
     }
-    
+
     section {
       display: grid;
       grid: auto auto / 50px 120px 1fr;
@@ -105,7 +126,7 @@
       padding: 10px;
       align-items: center;
     }
-    
+
     section > .icon {
       grid-row: 1;
       grid-column: 1;
@@ -115,12 +136,12 @@
       color: #fff;
       background-color: #2980B9;
     }
-    
+
     section > h2 {
       grid-row: 1;
       grid-column: 2;
     }
-    
+
     section > hr {
       grid-row: 1;
       grid-column: 3;
@@ -129,145 +150,222 @@
       border: none;
       background-color: #2980B9;
     }
-    
+
     section .detail {
       grid-row: 2;
       grid-column: 2/4;
     }
-    
+
     section .icon-list {
       display: flex;
       align-items: center;
       margin-bottom: 15px;
     }
-    
+
     section .icon-list .icon {
       font-size: 18px;
       margin-right: 10px;
       color: #7F8C8D;
     }
-    
+
     section .timeline-panel {
       display: grid;
       grid: auto auto / 160px 1fr auto;
       align-items: center;
     }
-    
+
     section .timeline-panel .date {
       grid-row: 1;
       grid-column: 1;
     }
-    
+
     section .timeline-panel h3 {
       grid-row: 1;
       grid-column: 2;
     }
-    
+
     section .timeline-panel .major {
       grid-row: 1;
       grid-column: 3;
       margin-left: 15px;
     }
-    
+
     section .timeline-panel .intro {
       grid-row: 2;
       grid-column: 2/4;
     }
-    
+
+    section .intro h4 {
+      display: inline-block;
+      margin: 6px 0 0 0;
+    }
+
+    section .intro img {
+      width: 450px;
+      height: 200px;
+      border-radius: 3px;
+    }
+
+    section .intro #db_preview {
+      width: 250px;
+      height: 300px;
+    }
   </style>
-  
+
 </head>
 <body>
-  <header>
-    <h2>高中远</h2>
-    <span>应聘前端工程师</span>
-  </header>
-  
-  <main>
-    <section>
-      <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-education"></use>
-      </svg>
-      <h2>教育经历</h2>
-      <hr>
-      <div class="detail">
-        <div class="timeline-panel">
-          <div class="date">2013.09 ~ 2017.06</div>
-          <h3>浙江工业大学</h3>
-          <p class="major">本科&nbsp&nbsp功能材料</p>
-          <p class="intro">全国大学英语4、6级</p>
+<header>
+  <h2>高中远</h2>
+  <span>应聘前端工程师</span>
+</header>
+
+<main>
+  <section>
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-education"></use>
+    </svg>
+    <h2>教育经历</h2>
+    <hr>
+    <div class="detail">
+      <div class="timeline-panel">
+        <div class="date">2013.09 ~ 2017.06</div>
+        <h3>浙江工业大学</h3>
+        <p class="major">本科&nbsp&nbsp功能材料</p>
+        <p class="intro">CET4、CET6</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-job"></use>
+    </svg>
+    <h2>工作经历</h2>
+    <hr>
+    <div class="detail">
+      <div class="timeline-panel">
+        <div class="date">2017.06 ~ 2018.03</div>
+        <h3>东华工程科技股份有限公司上海分公司</h3>
+        <p class="major">工程师助理</p>
+        <p class="intro">主要负责协助工程师，使用PDS（化工建模软件）完成对场地、设备等模型的构建，CAD的出图修改等；
+          入职后短时间内自学新的软件技能，并且迅速上手，根据设计以及工程师建议搭建模型与区域布置；
+          在人手不足的情况下，参与项目成功做出符合要求规范的成果并通过审查。</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <svg class="icon" aria-hidden="true">
+      <use xlink:href="#icon-item1"></use>
+    </svg>
+    <h2>个人项目</h2>
+    <hr>
+    <div class="detail">
+      <div class="timeline-panel">
+        <div class="date"></div>
+        <h3>CNode 社区</h3>
+        <p class="major"></p>
+        <div class="intro">
+          <img src="./cnode_img.png" alt="" id="img_preview">
+          <p>利用官网提供的 API，对网站进行还原；
+            通过 Vue CLI 搭建，使用 Axios 获取数据，Vue Router 实现路由的跳转，并利用 watch 监听路由；
+            运用到了 Vue 的内置指令和事件绑定等功能，诸如 v-bind, v-if 等等；使用计算属性限制显示条目，过滤器 filter 过滤日期和分类，分页功能的实现，父子组件传递数据。
+          </p>
+          <h4>技术栈:</h4> <span class="highlight">Vue</span>, <span class="highlight">Vue CLI</span>, <span class="highlight">Vue Router</span> <br>
+          <h4><a href="https://gzygzy00.github.io/cnode-imitated/dist/#/">预览链接: https://gzygzy00.github.io/cnode-imitated/dist/#/</a></h4>  <br>
+          <h4><a href="https://github.com/gzygzy00/cnode-imitated">项目源码: https://github.com/gzygzy00/cnode-imitated</a></h4>
         </div>
       </div>
-    </section>
-    
-    <section>
-      <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-job"></use>
-      </svg>
-      <h2>工作经历</h2>
-      <hr>
-      <div class="detail">
-        <div class="timeline-panel">
-          <div class="date">2017.06 ~ 2018.03</div>
-          <h3>东华工程科技股份有限公司上海分公司</h3>
-          <p class="major">工程师助理</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="detail">
+      <div class="timeline-panel">
+        <div class="date"></div>
+        <h3>简简单单在线音乐</h3>
+        <p class="major"></p>
+        <div class="intro">
+          <img src="./music_img.png" alt="" id="img_preview">
+          <p>
+            通过使用 html dom audio 功能和 JQuery，CSS 宽高使用'vw'、'vh'代替'px'，实现了一个简单的响应式页面音乐播放器；
+            可以点击页面下方专辑进行音乐播放，已有暂停、播放下一首等功能；
+            可以显示对应歌曲相关信息，正则匹配歌词，并加入了一个可以显示 CSS3 动画的小功能来改变歌词字体效果。
+          </p>
+          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">CSS3</span>, <span class="highlight">响应式</span> <br>
+          <h4><a href="https://gzygzy00.github.io/music-player/">预览链接: https://gzygzy00.github.io/music-player/</a></h4>  <br>
+          <h4><a href="https://github.com/gzygzy00/music-player">项目源码: https://github.com/gzygzy00/music-player</a></h4>
         </div>
       </div>
-    </section>
-    
-    <section>
-      <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-item1"></use>
-      </svg>
-      <h2>个人项目</h2>
-      <hr>
-      <div class="detail">
-        <div class="timeline-panel">
-          <div class="date"></div>
-          <h3>东华工程科技股份有限公司上海分公司</h3>
-          <p class="major"></p>
+    </div>
+  </section>
+
+  <section>
+    <div class="detail">
+      <div class="timeline-panel">
+        <div class="date"></div>
+        <h3>豆瓣电影TOP250</h3>
+        <p class="major"></p>
+        <div class="intro">
+          <img src="./DB_img.png" alt="" id="db_preview">
+          <p>
+            利用豆瓣电影的 API，获取前250部电影的信息以及豆瓣评分，
+            使用 JQuery 来选取页面中的元素，实现切换不同分区对应内容，
+            以及下拉到底部才会继续加载等功能。
+          </p>
+          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">Ajax</span> <br>
+          <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: https://github.com/gzygzy00/DB_top250</a></h4>  <br>
+          <h4><a href="https://gzygzy00.github.io/DB_top250/">项目源码: https://gzygzy00.github.io/DB_top250/</a></h4>
         </div>
       </div>
-    </section>
-  </main>
-  
-  <aside>
-    <section>
-      <svg class="icon" aria-hidden="true">
+    </div>
+  </section>
+</main>
+
+<aside>
+  <section>
+    <svg class="icon" aria-hidden="true">
       <use xlink:href="#icon-info"></use>
-      </svg>
-      <h2>基本信息</h2>
-      <div class="detail">
-        <div class="icon-list">
-          <svg class="icon" aria-hidden="true">
-      <use xlink:href="#icon-phone"></use>
+    </svg>
+    <h2>基本信息</h2>
+    <div class="detail">
+      <div class="icon-list">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-info"></use>
         </svg>
-          <span>18516368662</span>
-        </div>
-        <div class="icon-list">
-          <svg class="icon" aria-hidden="true">
-      <use xlink:href="#icon-email"></use>
-        </svg>
-          <span>gaozhyuan@126.com</span>
-        </div>
+        <span>男/24岁</span>
       </div>
-      <hr>
-    </section>
-    
-    <section>
-      <svg class="icon" aria-hidden="true">
+      <div class="icon-list">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-phone"></use>
+        </svg>
+        <span>18516368662</span>
+      </div>
+      <div class="icon-list">
+        <svg class="icon" aria-hidden="true">
+          <use xlink:href="#icon-email"></use>
+        </svg>
+        <span>gaozhyuan@126.com</span>
+      </div>
+    </div>
+    <hr>
+  </section>
+
+  <section>
+    <svg class="icon" aria-hidden="true">
       <use xlink:href="#icon-skill"></use>
-      </svg>
-      <h2>掌握技能</h2>
-      <div class="detail">
-        <ul>
-          <li>掌握 <strong>HTML5/CSS3</strong>，熟悉传统布局、Flex布局、Grid布局、移动端适配等</li>
-          <li>熟悉Vue技术栈如Vue-Router、Vuex、Vue-CLI及相关流行库的使用，对其重要概念有一定理解</li>
-          <li>熟悉前后端交互技术JSONP、AJAX，了解fetch</li>
-        </ul>
-      </div>
-      <hr>
-    </section>
-  </aside>
+    </svg>
+    <h2>掌握技能</h2>
+    <div class="detail">
+      <ul>
+        <li>熟悉 HTML/CSS，能够实现常用布局，如 Flex 布局；熟悉 HTML5 及其语义化，有 CSS3 动画使用经验；</li>
+        <li>熟悉原生 JavaScript，会使用部分 ES6 常用功能；有 JQuery 使用经验；</li>
+        <li>熟悉 Vue 及其常用指令，对其组件、生命周期等有一定理解，能够使用Vue CLI开发项目；</li>
+        <li>了解 HTTP，Webpack</li>
+      </ul>
+    </div>
+    <hr>
+  </section>
+</aside>
 </body>
 </html>
