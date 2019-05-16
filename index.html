@@ -81,9 +81,41 @@
         grid-column: 1;
       }
 
-      section .intro #img_preview {
-        width: 400px;
-        height: 180px;
+      main section {
+        margin-top: 0;
+      }
+
+      aside section {
+        margin-top: 0;
+      }
+
+      section .detail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      section .detail .timeline-panel h3 {
+        grid-row: 1;
+        grid-column: 1/4;
+      }
+
+      section .detail .timeline-panel .intro {
+        grid-row: 2;
+        grid-column: 1/4;
+      }
+
+      section:first-child .detail .timeline-panel .date {
+        margin-top: -50px;
+      }
+
+      section:nth-child(2) .detail .timeline-panel .date {
+        margin-top: -50px;
+      }
+
+      section:nth-child(2) .detail .timeline-panel .major {
+        margin: 60px 0 0 0;
       }
     }
 
@@ -254,8 +286,6 @@
     </div>
   </section>
 
-  <br>
-  <br>
 
   <section>
     <svg class="icon" aria-hidden="true">
@@ -305,10 +335,6 @@
     </div>
   </section>
 
-  <br>
-  <br>
-  <br>
-  <br>
 
   <section>
     <div class="detail">
@@ -326,6 +352,26 @@
           <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">Ajax</span> <br>
           <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: https://github.com/gzygzy00/DB_top250</a></h4>  <br>
           <h4><a href="https://gzygzy00.github.io/DB_top250/">项目源码: https://gzygzy00.github.io/DB_top250/</a></h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="detail">
+      <div class="timeline-panel">
+        <div class="date"></div>
+        <h3>在线简历</h3>
+        <p class="major"></p>
+        <div class="intro">
+<!--          <img src="./DB_img.png" alt="" id="db_preview">-->
+          <p>
+            通过 HTML 和 CSS，采用 grid 布局，完成的一份简历;
+            提供了适合不同尺寸屏幕的样式。
+          </p>
+          <h4>技术栈:</h4> <span class="highlight">HTML</span>, <span class="highlight">CSS</span> <br>
+          <h4><a href="https://gzygzy00.github.io/cv/">预览链接: https://gzygzy00.github.io/cv/</a></h4>  <br>
+          <h4><a href="https://github.com/gzygzy00/cv">项目源码: https://github.com/gzygzy00/cv</a></h4>
         </div>
       </div>
     </div>
