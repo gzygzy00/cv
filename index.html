@@ -63,30 +63,36 @@
     @media (max-width: 768px) {
       body {
         grid: auto auto auto / 1fr;
-        padding: 0 10px 30px 10px;
+        padding: 0 0 30px 0;
       }
 
       header {
         grid-row: 1;
         grid-column: 1;
+        padding: 0;
+        margin-bottom: 10px;
       }
 
       aside {
         grid-row: 2;
         grid-column: 1;
+        padding: 0 10px 0 10px;
       }
 
       main {
         grid-row: 3;
         grid-column: 1;
+        padding: 0 10px 0 10px;
       }
 
       main section {
-        margin-top: 0;
+        margin-top: 0px;
+        padding: 0;
       }
 
       aside section {
-        margin-top: 0;
+        margin-top: 0px;
+        padding: 0;
       }
 
       section .detail {
@@ -110,12 +116,20 @@
         margin-top: -50px;
       }
 
+      section:first-child .detail .timeline-panel .intro {
+        margin-top: 0;
+      }
+
       section:nth-child(2) .detail .timeline-panel .date {
         margin-top: -50px;
       }
 
       section:nth-child(2) .detail .timeline-panel .major {
         margin: 60px 0 0 0;
+      }
+
+      section:nth-child(2) .detail .timeline-panel .intro {
+        margin-top: 0;
       }
     }
 
@@ -213,13 +227,13 @@
 
     section .timeline-panel h3 {
       grid-row: 1;
-      grid-column: 2;
+      grid-column: 2/3;
     }
 
     section .timeline-panel .major {
       grid-row: 1;
       grid-column: 3;
-      margin-left: 15px;
+      margin-left: 20px;
     }
 
     section .timeline-panel .intro {
@@ -240,7 +254,7 @@
 
     section .intro #db_preview {
       width: 250px;
-      height: 300px;
+      height: 350px;
     }
   </style>
 
@@ -302,6 +316,10 @@
           <img src="./cnode_img.png" alt="" id="img_preview">
           <p>利用官网提供的 API，通过 Vue 对网站进行还原，可以查看 CNode 社区的帖子与用户信息等；
             项目通过 Vue CLI 搭建，使用 Axios 获取数据，Vue Router 实现路由的跳转；
+<!--            <br>-->
+<!--            <br>-->
+<!--            <br>-->
+<!--            <br>-->
             项目运用到了 Vue 的内置指令和事件绑定等功能，诸如 v-bind, v-if 等等；
             使用计算属性限制显示条目，过滤器 filter 过滤日期和分类，分页功能的实现，父子组件传递数据；
             针对路由跳转后页面不会重新获取数据，利用 watch 监听路由，并增添 methods 使页面跳转后回到顶部，优化用户体验。
@@ -313,6 +331,8 @@
       </div>
     </div>
   </section>
+
+  <br>
 
   <section>
     <div class="detail">
@@ -335,6 +355,7 @@
     </div>
   </section>
 
+  <br>
 
   <section>
     <div class="detail">
@@ -349,6 +370,9 @@
             使用 JQuery 来选取页面中的元素，可以切换top250、北美票房榜以及搜索功能；
             为了提升页面的加载和数据的获取速度，使页面下拉到底部使才会继续加载和渲染数据。
           </p>
+
+<!--          <br>-->
+
           <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">Ajax</span> <br>
           <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: https://github.com/gzygzy00/DB_top250</a></h4>  <br>
           <h4><a href="https://gzygzy00.github.io/DB_top250/">项目源码: https://gzygzy00.github.io/DB_top250/</a></h4>
@@ -356,6 +380,8 @@
       </div>
     </div>
   </section>
+
+  <br>
 
   <section>
     <div class="detail">
@@ -395,6 +421,8 @@
 <!--      </div>-->
 <!--    </div>-->
 <!--  </section>-->
+
+<!--  <br>-->
 
   <section>
     <svg class="icon" aria-hidden="true">
