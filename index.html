@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
   <meta charset="utf-8">
   <title>个人简历</title>
@@ -86,12 +86,12 @@
       }
 
       main section {
-        margin-top: 0px;
+        margin-top: 0;
         padding: 0;
       }
 
       aside section {
-        margin-top: 0px;
+        margin-top: 0;
         padding: 0;
       }
 
@@ -276,7 +276,7 @@
       <div class="timeline-panel">
         <div class="date">2013.09 ~ 2017.06</div>
         <h3>浙江工业大学</h3>
-<!--        本科&nbsp&nbsp-->
+        <!--        本科&nbsp&nbsp-->
         <p class="major">功能材料</p>
         <p class="intro">CET4、CET6</p>
       </div>
@@ -294,8 +294,21 @@
         <div class="date">2017.06 ~ 2018.03</div>
         <h3>东华工程科技股份有限公司上海分公司</h3>
         <p class="major">工程师助理</p>
-        <p class="intro">主要负责协助工程师，完成建模，出图修改等；
-          入职后迅速自学上手新的软件技能，参与项目成功做出符合要求的成果并通过审查。</p>
+        <p class="intro">主要负责化工工艺管道，协助工程师，完成建模、出图修改等。</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="detail">
+      <div class="timeline-panel">
+        <div class="date">2019.07 ~ 2019.12</div>
+        <h3>ATA 全美在线教育科技股份有限公司</h3>
+        <p class="major">内容开发工程师</p>
+        <p class="intro">
+          负责日常试卷的制作与核对，调整考试登录页面的信息位置；<br>
+          根据设计稿，配合后端，使用 jQuery 制作特殊试题；<br>
+          通过正则限制考生的输入，使用 window.external 与后端实现数据交换，兼容 IE6 以上。
+        </p>
       </div>
     </div>
   </section>
@@ -305,7 +318,7 @@
     <svg class="icon" aria-hidden="true">
       <use xlink:href="#icon-item1"></use>
     </svg>
-    <h2>项目经历</h2>
+    <h2>开源项目</h2>
     <hr>
     <div class="detail">
       <div class="timeline-panel">
@@ -316,17 +329,20 @@
           <img src="./cnode_img.png" alt="" id="img_preview">
           <p>利用官网提供的 API，通过 Vue 对网站进行还原，可以查看 CNode 社区的帖子与用户信息等；
             项目通过 Vue CLI 搭建，使用 Axios 获取数据，Vue Router 实现路由的跳转；
-<!--            <br>-->
-<!--            <br>-->
-<!--            <br>-->
-<!--            <br>-->
+            <!--            <br>-->
+            <!--            <br>-->
+            <!--            <br>-->
+            <!--            <br>-->
             项目运用到了 Vue 的内置指令和事件绑定等功能，诸如 v-bind, v-if 等等；
             使用计算属性限制显示条目，过滤器 filter 过滤日期和分类，分页功能的实现，父子组件传递数据；
             针对路由跳转后页面不会重新获取数据，利用 watch 监听路由，并增添 methods 使页面跳转后回到顶部，优化用户体验。
           </p>
-          <h4>技术栈:</h4> <span class="highlight">Vue</span>, <span class="highlight">Vue CLI</span>, <span class="highlight">Vue Router</span> <br>
-          <h4><a href="https://gzygzy00.github.io/cnode-imitated/dist/#/">预览链接: https://gzygzy00.github.io/cnode-imitated/dist/#/</a></h4>  <br>
-          <h4><a href="https://github.com/gzygzy00/cnode-imitated">项目源码: https://github.com/gzygzy00/cnode-imitated</a></h4>
+          <h4>技术栈:</h4> <span class="highlight">Vue</span>, <span class="highlight">Vue CLI</span>, <span
+          class="highlight">Vue Router</span> <br>
+          <h4><a href="https://gzygzy00.github.io/cnode-imitated/dist/#/">预览链接:
+            https://gzygzy00.github.io/cnode-imitated/dist/#/</a></h4>  <br>
+          <h4><a href="https://github.com/gzygzy00/cnode-imitated">项目源码: https://github.com/gzygzy00/cnode-imitated</a>
+          </h4>
         </div>
       </div>
     </div>
@@ -347,8 +363,10 @@
             项目利用 CSS 宽高使用'vw'/'vh'代替'px'，实现了一个简单的响应式页面；
             可以显示对应歌曲相关信息，正则匹配歌词，并加入了一个可以显示 CSS3 动画的小功能来美化歌词字体展现效果。
           </p>
-          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">CSS3</span>, <span class="highlight">响应式</span> <br>
-          <h4><a href="https://gzygzy00.github.io/music-player/">预览链接: https://gzygzy00.github.io/music-player/</a></h4>  <br>
+          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">CSS3</span>, <span
+          class="highlight">响应式</span> <br>
+          <h4><a href="https://gzygzy00.github.io/music-player/">预览链接: https://gzygzy00.github.io/music-player/</a></h4>
+          <br>
           <h4><a href="https://github.com/gzygzy00/music-player">项目源码: https://github.com/gzygzy00/music-player</a></h4>
         </div>
       </div>
@@ -371,7 +389,7 @@
             为了提升页面的加载和数据的获取速度，使页面下拉到底部使才会继续加载和渲染数据。
           </p>
 
-<!--          <br>-->
+          <!--          <br>-->
 
           <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">Ajax</span> <br>
           <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: https://github.com/gzygzy00/DB_top250</a></h4>  <br>
@@ -390,7 +408,7 @@
         <h3>在线简历</h3>
         <p class="major"></p>
         <div class="intro">
-<!--          <img src="./DB_img.png" alt="" id="db_preview">-->
+          <!--          <img src="./DB_img.png" alt="" id="db_preview">-->
           <p>
             通过 HTML 和 CSS，采用 grid 布局，完成的一份简历;
             提供了适合不同尺寸屏幕的样式。
@@ -403,26 +421,26 @@
     </div>
   </section>
 
-<!--  <section>-->
-<!--    <div class="detail">-->
-<!--      <div class="timeline-panel">-->
-<!--        <div class="date"></div>-->
-<!--        <h3>准备再加一个"瀑布流新闻网站"或者"多人共享博客"</h3>-->
-<!--        <p class="major"></p>-->
-<!--        <div class="intro">-->
-<!--          <img src="" alt="" id="db_preview">-->
-<!--          <p>-->
+  <!--  <section>-->
+  <!--    <div class="detail">-->
+  <!--      <div class="timeline-panel">-->
+  <!--        <div class="date"></div>-->
+  <!--        <h3>准备再加一个"瀑布流新闻网站"或者"多人共享博客"</h3>-->
+  <!--        <p class="major"></p>-->
+  <!--        <div class="intro">-->
+  <!--          <img src="" alt="" id="db_preview">-->
+  <!--          <p>-->
 
-<!--          </p>-->
-<!--          <h4>技术栈:</h4> <span class="highlight"></span>, <span class="highlight"></span> <br>-->
-<!--          <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: </a></h4>  <br>-->
-<!--          <h4><a href="https://gzygzy00.github.io/DB_top250/">项目源码: </a></h4>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </section>-->
+  <!--          </p>-->
+  <!--          <h4>技术栈:</h4> <span class="highlight"></span>, <span class="highlight"></span> <br>-->
+  <!--          <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: </a></h4>  <br>-->
+  <!--          <h4><a href="https://gzygzy00.github.io/DB_top250/">项目源码: </a></h4>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </section>-->
 
-<!--  <br>-->
+  <!--  <br>-->
 
   <section>
     <svg class="icon" aria-hidden="true">
@@ -477,7 +495,6 @@
     </div>
     <hr>
   </section>
-
 
 
   <section>
