@@ -305,7 +305,7 @@
         <h3>ATA 全美在线教育科技股份有限公司</h3>
         <p class="major">内容开发工程师</p>
         <p class="intro">
-          负责日常试卷的制作与核对，调整考试登录页面的信息位置；<br>
+          负责日常试题的制作与核对，调整考试登录页面的信息位置；<br>
           根据设计稿，配合后端，使用 jQuery 制作特殊试题；<br>
           通过正则限制考生的输入，使用 window.external 与后端实现数据交换，兼容 IE6 以上。
         </p>
@@ -323,16 +323,12 @@
     <div class="detail">
       <div class="timeline-panel">
         <div class="date"></div>
-        <h3>CNode 社区</h3>
+        <h3>G 社区</h3>
         <p class="major"></p>
         <div class="intro">
           <img src="./cnode_img.png" alt="" id="img_preview">
           <p>利用官网提供的 API，通过 Vue 对网站进行还原，可以查看 CNode 社区的帖子与用户信息等；
             项目通过 Vue CLI 搭建，使用 Axios 获取数据，Vue Router 实现路由的跳转；
-            <!--            <br>-->
-            <!--            <br>-->
-            <!--            <br>-->
-            <!--            <br>-->
             项目运用到了 Vue 的内置指令和事件绑定等功能，诸如 v-bind, v-if 等等；
             使用计算属性限制显示条目，过滤器 filter 过滤日期和分类，分页功能的实现，父子组件传递数据；
             针对路由跳转后页面不会重新获取数据，利用 watch 监听路由，并增添 methods 使页面跳转后回到顶部，优化用户体验。
@@ -350,24 +346,44 @@
 
   <br>
 
+<!--  <section>-->
+<!--    <div class="detail">-->
+<!--      <div class="timeline-panel">-->
+<!--        <div class="date"></div>-->
+<!--        <h3>简简单单在线音乐</h3>-->
+<!--        <p class="major"></p>-->
+<!--        <div class="intro">-->
+<!--          <img src="./music_img.png" alt="" id="img_preview">-->
+<!--          <p>-->
+<!--            主要通过 jQuery 构造了一个在线的响应式页面音乐播放器，提供不同分类的音乐选择切换和歌词滚动；-->
+<!--            项目利用 CSS 宽高使用'vw'/'vh'代替'px'，实现了一个简单的响应式页面；-->
+<!--            可以显示对应歌曲相关信息，正则匹配歌词，并加入了一个可以显示 CSS3 动画的小功能来美化歌词字体展现效果。-->
+<!--          </p>-->
+<!--          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">CSS3</span>, <span-->
+<!--          class="highlight">响应式</span> <br>-->
+<!--          <h4><a href="https://gzygzy00.github.io/music-player/">预览链接: https://gzygzy00.github.io/music-player/</a></h4>-->
+<!--          <br>-->
+<!--          <h4><a href="https://github.com/gzygzy00/music-player">项目源码: https://github.com/gzygzy00/music-player</a></h4>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
   <section>
     <div class="detail">
       <div class="timeline-panel">
         <div class="date"></div>
-        <h3>简简单单在线音乐</h3>
+        <h3>Draw A Cuphead</h3>
         <p class="major"></p>
         <div class="intro">
-          <img src="./music_img.png" alt="" id="img_preview">
+<!--          <img src="./music_img.png" alt="" id="img_preview">-->
           <p>
-            主要通过 JQuery 构造了一个在线的响应式页面音乐播放器，提供不同分类的音乐选择切换和歌词滚动；
-            项目利用 CSS 宽高使用'vw'/'vh'代替'px'，实现了一个简单的响应式页面；
-            可以显示对应歌曲相关信息，正则匹配歌词，并加入了一个可以显示 CSS3 动画的小功能来美化歌词字体展现效果。
+            用 JS 逐步呈现卡通人物茶杯头，通过 CSS 的绘制过程；
+            可以点击按钮控制展现速度。
           </p>
-          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">CSS3</span>, <span
-          class="highlight">响应式</span> <br>
-          <h4><a href="https://gzygzy00.github.io/music-player/">预览链接: https://gzygzy00.github.io/music-player/</a></h4>
+          <h4>技术栈:</h4> <span class="highlight">JS</span>, <span class="highlight">CSS</span> <br>
+          <h4><a href="https://gzygzy00.github.io/DrawCUPHEAD/dist/index">预览链接: https://gzygzy00.github.io/DrawCUPHEAD/dist/index</a></h4>
           <br>
-          <h4><a href="https://github.com/gzygzy00/music-player">项目源码: https://github.com/gzygzy00/music-player</a></h4>
+          <h4><a href="https://github.com/gzygzy00/DrawCUPHEAD">项目源码: https://github.com/gzygzy00/DrawCUPHEAD</a></h4>
         </div>
       </div>
     </div>
@@ -375,29 +391,53 @@
 
   <br>
 
-  <section>
-    <div class="detail">
-      <div class="timeline-panel">
-        <div class="date"></div>
-        <h3>豆瓣电影TOP250</h3>
-        <p class="major"></p>
-        <div class="intro">
-          <img src="./DB_img.png" alt="" id="db_preview">
-          <p>
-            利用豆瓣电影的 API，实现了一个可在移动端展示豆瓣电影top250的页面；
-            使用 JQuery 来选取页面中的元素，可以切换top250、北美票房榜以及搜索功能；
-            为了提升页面的加载和数据的获取速度，使页面下拉到底部使才会继续加载和渲染数据。
-          </p>
+<!--  <section>-->
+<!--    <div class="detail">-->
+<!--      <div class="timeline-panel">-->
+<!--        <div class="date"></div>-->
+<!--        <h3>豆瓣电影TOP250</h3>-->
+<!--        <p class="major"></p>-->
+<!--        <div class="intro">-->
+<!--          <img src="./DB_img.png" alt="" id="db_preview">-->
+<!--          <p>-->
+<!--            利用豆瓣电影的 API，实现了一个可在移动端展示豆瓣电影top250的页面；-->
+<!--            使用 jQuery 来选取页面中的元素，可以切换top250、北美票房榜以及搜索功能；-->
+<!--            为了提升页面的加载和数据的获取速度，使页面下拉到底部使才会继续加载和渲染数据。-->
+<!--          </p>-->
 
-          <!--          <br>-->
+<!--          &lt;!&ndash;          <br>&ndash;&gt;-->
 
-          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">Ajax</span> <br>
-          <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: https://github.com/gzygzy00/DB_top250</a></h4>  <br>
-          <h4><a href="https://gzygzy00.github.io/DB_top250/">项目源码: https://gzygzy00.github.io/DB_top250/</a></h4>
-        </div>
-      </div>
-    </div>
-  </section>
+<!--          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">Ajax</span> <br>-->
+<!--          <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: https://github.com/gzygzy00/DB_top250</a></h4>  <br>-->
+<!--          <h4><a href="https://gzygzy00.github.io/DB_top250/">项目源码: https://gzygzy00.github.io/DB_top250/</a></h4>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<!--  <section>-->
+<!--    <div class="detail">-->
+<!--      <div class="timeline-panel">-->
+<!--        <div class="date"></div>-->
+<!--        <h3>G 画布</h3>-->
+<!--        <p class="major"></p>-->
+<!--        <div class="intro">-->
+<!--          <img src="./DB_img.png" alt="" id="db_preview">-->
+<!--          <p>-->
+<!--            利用豆瓣电影的 API，实现了一个可在移动端展示豆瓣电影top250的页面；-->
+<!--            使用 jQuery 来选取页面中的元素，可以切换top250、北美票房榜以及搜索功能；-->
+<!--            为了提升页面的加载和数据的获取速度，使页面下拉到底部使才会继续加载和渲染数据。-->
+<!--          </p>-->
+
+<!--          &lt;!&ndash;          <br>&ndash;&gt;-->
+
+<!--          <h4>技术栈:</h4> <span class="highlight">jQuery</span>, <span class="highlight">Ajax</span> <br>-->
+<!--          <h4><a href="https://github.com/gzygzy00/DB_top250">预览链接: https://github.com/gzygzy00/DB_top250</a></h4>  <br>-->
+<!--          <h4><a href="https://gzygzy00.github.io/DB_top250/">项目源码: https://gzygzy00.github.io/DB_top250/</a></h4>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
   <br>
 
@@ -405,17 +445,18 @@
     <div class="detail">
       <div class="timeline-panel">
         <div class="date"></div>
-        <h3>在线简历</h3>
+        <h3>G 导航</h3>
         <p class="major"></p>
         <div class="intro">
           <!--          <img src="./DB_img.png" alt="" id="db_preview">-->
           <p>
-            通过 HTML 和 CSS，采用 grid 布局，完成的一份简历;
-            提供了适合不同尺寸屏幕的样式。
+            自制在线导航网站，可以搜索、收藏、删除网站，初始集合了一些个人做过的小练习和博客；
+            点击方块右上角可以删除已收藏的网站，flex 布局，可适应 PC 和手机屏幕；
+            关闭或者刷新页面时，会将数据储存在 localStorage 中。
           </p>
-          <h4>技术栈:</h4> <span class="highlight">HTML</span>, <span class="highlight">CSS</span> <br>
-          <h4><a href="https://gzygzy00.github.io/cv/">预览链接: https://gzygzy00.github.io/cv/</a></h4>  <br>
-          <h4><a href="https://github.com/gzygzy00/cv">项目源码: https://github.com/gzygzy00/cv</a></h4>
+          <h4>技术栈:</h4> <span class="highlight">HTML</span>, <span class="highlight">CSS</span>, <span class="highlight">jQuery</span> <br>
+          <h4><a href="https://gzygzy00.github.io/nav-demo-1/dist/index">预览链接: https://gzygzy00.github.io/nav-demo-1/dist/index</a></h4>  <br>
+          <h4><a href="https://github.com/gzygzy00/nav-demo-1">项目源码: https://github.com/gzygzy00/nav-demo-1</a></h4>
         </div>
       </div>
     </div>
@@ -472,13 +513,13 @@
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-info"></use>
         </svg>
-        <span>男/本科/24岁</span>
+        <span>男/本科/25岁</span>
       </div>
       <div class="icon-list">
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-phone"></use>
         </svg>
-        <span>18516368662</span>
+        <span></span>
       </div>
       <div class="icon-list">
         <svg class="icon" aria-hidden="true">
@@ -505,7 +546,7 @@
     <div class="detail">
       <ul>
         <li>熟悉 HTML/CSS，能够实现常用布局，如 Flex 布局；熟悉 HTML5 及其语义化，有 CSS3 动画使用经验；</li>
-        <li>熟悉原生 JavaScript，会使用 ES6 常用语法；有 JQuery 使用经验；</li>
+        <li>熟悉原生 JavaScript，会使用 ES6 常用语法；有 jQuery 使用经验；</li>
         <li>熟悉 Vue 及其常用指令，对其组件、生命周期等有一定理解，能够使用 Vue CLI 开发项目；</li>
         <li>了解 HTTP，Webpack，SASS</li>
       </ul>
