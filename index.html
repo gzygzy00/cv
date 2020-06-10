@@ -58,6 +58,7 @@
         width: 250px;
         height: 110px;
       }
+
     }
 
     @media (max-width: 768px) {
@@ -254,6 +255,15 @@
       height: 200px;
       border-radius: 3px;
     }
+    section .intro #xcx_img_preview {
+      width: 80px;
+      height: 142px;
+    }
+    section .intro #xcxm_img_preview {
+      width: 186px;
+      height: 212px;
+    }
+
 
     section .intro #db_preview {
       width: 250px;
@@ -338,7 +348,7 @@
     <svg class="icon" aria-hidden="true">
       <use xlink:href="#icon-item1"></use>
     </svg>
-    <h2>开源项目</h2>
+    <h2>个人项目</h2>
     <hr>
     <div class="detail">
       <div class="timeline-panel">
@@ -392,10 +402,35 @@
     <div class="detail">
       <div class="timeline-panel">
         <div class="date"></div>
+        <h3>G简翻译</h3>
+        <p class="major"></p>
+        <div class="intro">
+          <img src="./g-tran.png" alt="" id="xcx_img_preview">
+          <p>
+            利用百度通用翻译提供的 API，通过 wx.request 请求数据，制作的简易翻译小工具；
+            通过设置 app.json 的 tabBar 展示翻译和历史；
+            使用 navigator 标签可切换翻译不同语种的语言，wx.setStorageSync 保存历史记录。
+          </p>
+          <h4>技术栈:</h4> <span class="highlight">WXML</span>, <span class="highlight">WXS</span>, <span
+          class="highlight">JS</span> <br>
+          <h4><a>预览链接:</a><img src="./g-translation.jpg" alt="" id="xcxm_img_preview"></h4> <br>
+          <h4><a href="https://github.com/gzygzy00/WX-MiniP-demo-1">项目源码: https://github.com/gzygzy00/WX-MiniP-demo-1</a>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <section>
+    <div class="detail">
+      <div class="timeline-panel">
+        <div class="date"></div>
         <h3>Draw A Cuphead</h3>
         <p class="major"></p>
         <div class="intro">
-<!--          <img src="./music_img.png" alt="" id="img_preview">-->
+          <img src="./cuphead.png" alt="" id="img_preview">
           <p>
             用 JS 逐步呈现卡通人物茶杯头，通过 CSS 的绘制过程；
             可以点击按钮控制展现速度。
@@ -539,7 +574,7 @@
         <svg class="icon" aria-hidden="true">
           <use xlink:href="#icon-phone"></use>
         </svg>
-        <span>18516368662</span>
+        <span>***</span>
       </div>
       <div class="icon-list">
         <svg class="icon" aria-hidden="true">
@@ -568,7 +603,7 @@
         <li>熟悉 HTML/CSS，能够实现常用布局，如 Flex 布局；熟悉 HTML5 及其语义化，有 CSS3 动画使用经验；</li>
         <li>熟悉原生 JavaScript，会使用 ES6 常用语法；有 jQuery 使用经验；</li>
         <li>熟悉 Vue 及其常用指令，对其组件、生命周期等有一定理解，能够使用 Vue CLI 开发项目；</li>
-        <li>了解 HTTP，Webpack，SASS</li>
+        <li>了解 HTTP，Webpack，SASS, 小程序</li>
       </ul>
     </div>
     <hr>
